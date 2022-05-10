@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityForSaved"
+
+    android:background="@drawable/bg_final"
+
+    >
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical|end"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:backgroundTint="#E64526"
+        app:maxImageSize="30dp"
+        app:tint="@null"
+        app:srcCompat="@drawable/city_white4" />
+
+    <ImageView
+        android:id="@+id/no_items"
+        android:layout_width="187dp"
+        android:layout_height="186dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/folder5"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSaved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:listitem="@layout/saved_item"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_found_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="145dp"
+        android:text="No items found"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

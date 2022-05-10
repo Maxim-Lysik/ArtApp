@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1.16"
+        app:srcCompat="@drawable/wolf_final"
+        tools:src="@tools:sample/avatars" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="260dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/circles3"
+        tools:src="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/savingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Share art"
+        android:textAlignment="center"
+        android:textColor="#353535"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Just found something unique? \nSend it to anyone you want to inform. \nSet your routes together!" />
+
+    <Button
+        android:id="@+id/walking_button"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4BA2D3"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Start"
+        android:textAllCaps="false"
+
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+
+</LinearLayout>
